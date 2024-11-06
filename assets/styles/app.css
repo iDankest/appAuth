@@ -1,3 +1,32 @@
 body {
     background-color: skyblue;
 }
+
+header {
+    display: flex;
+    width: 97vw;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+header nav a:hover {
+    color: #807b7b;
+}
+header ol{
+    display: flex;
+    width: 93vw;
+    list-style: none;
+    justify-content: space-between;
+}

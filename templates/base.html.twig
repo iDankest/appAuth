@@ -22,6 +22,12 @@
     </ol>
     </nav>
     </header>
+    {% if app.user %}
+        <h3 style="text-align: center;"><a href="{{path('dashboard')}}">Dashboard</a></h3>
+    {% endif %}
+    {% if app.user and is_granted("ROLE_ADMIN") %}
+        <h3 style="text-align: center;"><a href="{{path('admin')}}">Admin</a></h3>
+    {% endif %}
         {% block body %}{% endblock %}
     </body>
 </html>
